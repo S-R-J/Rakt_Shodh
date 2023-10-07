@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounts</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .container {
+            /* background-color: aquamarine; */
+            height: 80vh;
+            width: 80vw;
+        }
+
+        .options {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px grey solid; */
+            border-radius: 20px;
+
+        }
+
+        .box {
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            width: 300px;
+            margin: 3vw;
+            /* background-color: grey; */
+            /* border: 2px red solid; */
+            border: 3px grey solid;
+            border-radius: 20px;
+            /* border-radius: 20px; */
+
+        }
+
+        .box:hover {
+            border: 3px #039be5 solid;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            /* background: linear-gradient(to right, #00F1FF, #3E7CEE); */
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 30px;
+
+            
+        }
+
+
+
+
+        .user_details {
+            display: flex;
+            /* position: absolute;
+            top: 100px;
+            left:15vw; */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* background-color: aqua; */
+            border: 2px grey solid;
+            border-radius: 20px;
+            height: 50vh;
+
+            background: linear-gradient(to right, #00F1FF, #3E7CEE);
+
+            /* width: 70vw; */
+            /* display: none; */
+            /* opacity: 0; */
+            /* transition: 1s; */
+            /* z-index: 3; */
+
+            /* border: 2px red solid; */
+        }
+
+        .user_details .input-box {
+            display: grid;
+            /* margin: 30px; */
+            margin-bottom: 2.5em;
+            /* border: 2px red solid; */
+
+        }
+
+        .details {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            color: white;
+            margin-bottom: 15px;
+
+
+        }
+
+
+        input {
+            height: 40px;
+            width: 20vw;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        input:focus{
+            /* background-color: rgb(71, 71, 71); */
+            /* background: linear-gradient(to right, #000000, #ffffff); */
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            /* color: white; */
+            border-color: white;
+        }
+
+        .btn1 {
+            margin-top: 3vh;
+            /* opacity: 0; */
+            transition: 0.5s;
+        }
+
+        
+        #button1 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 27px;
+            height: 40px;
+            width: 10vw;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #button1:hover {
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1, 1.1);
+            cursor: pointer;
+            /* background: linear-gradient(to right, #00F1FF, #3E7CEE); */
+            color: white;
+            background-color: rgb(255, 0, 0);
+        }
+
+
+
+        #button3 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 27px;
+            height: 40px;
+            width: 10vw;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #button3:hover {
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1, 1.1);
+            cursor: pointer;
+            /* background: linear-gradient(to right, #00F1FF, #3E7CEE); */
+            color: white;
+            background-color: black;
+        }
+
+
+
+
+        .box h1 {
+            margin-top: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .box img {
+            /* background-blend-mode:difference; */
+            height: 100px;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        /* .options #tickimg {
+            height: 50px;
+            position: fixed;
+            top: 35vh;
+            left: 31vw;
+            display: none;
+        } */
+
+
+        #box1{
+            /* background-color: green; */
+        }
+
+        .tickbox{
+            display: flex;
+            justify-content: flex-end;
+            /* background-color: grey; */
+            margin-top: -3em;
+            height: 3em;
+
+        }
+
+        
+        #tick_box1 {
+            margin-top: 1em;
+            margin-right: -1em;
+            height: 50px;
+            justify-content: flex-end;
+            /* border: 2px red solid ; */
+            transition: 0.3s;
+            opacity: 0;
+        }
+
+
+
+        
+        #tick_box2 {
+            margin-top: 1em;
+            margin-right: -1em;
+            height: 50px;
+            justify-content: flex-end;
+            /* border: 2px red solid ; */
+            transition: 0.3s;
+            opacity: 0;
+        }
+
+
+
+        
+        #tick_box3 {
+            margin-top: 1em;
+            margin-right: -1em;
+            height: 50px;
+            justify-content: flex-end;
+            /* border: 2px red solid ; */
+            transition: 0.3s;
+            opacity: 0;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        #heading {
+            margin-top: -50px;
+            /* margin-bottom: 50px; */
+        
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            background: linear-gradient(to right, #00F1FF, #3E7CEE);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+
+        }
+
+        .back-btn_container
+        {
+            display: flex;
+            justify-content:flex-start;
+            width: 100%;
+            /* border: 2px red solid; */
+
+            margin-left: 10vw;
+           
+        }
+
+
+        #bck_btn
+        {
+            border-radius: 50px;
+            background-color: white;
+            outline: transparent;
+            border: 1px black solid;
+
+            margin-bottom: -20px;
+            padding: 10px;
+        }
+
+        #bck_btn:hover
+        {
+            transform: scale(1.2);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        #bck_btn:active
+        {
+            transform: scale(0.8);
+        }
+
+
+        
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="back-btn_container">
+        <a href="/"><img id="bck_btn" src ="/images/back-button2.png" alt=""></a>
+        
+    </div>
+  
+    <div class="container">
+        <div id="heading">Choose Account Type</div>
+        <div class="options">
+
+            <div class="box" id="box1">
+                <h1 id="tytl_1">User Login</h1>
+                <div class="images">
+                    <img src="images/usericon.jpeg" alt="">
+                </div>
+                <div class="tickbox">
+                    <img id="tick_box1" src="images/tick.png" alt="">
+                </div>
+                
+                <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio asperiores libero sint amet dolores adipisci
+                    cum voluptas eius ipsam ab, delectus, magnam dignissimos ipsa ut quidem distinctio. Quae sunt reiciendis
+                    corporis, at veniam exercitationem iusto obcaecati modi, iste sapiente ea alias explicabo eius laboriosam
+                    tempora accusantium doloremque vitae harum quasi.</p> -->
+            </div>
+            <div class="box" id="box2">
+                <h1 id="tytl_2">Blood Bank Login</h1>
+                <div class="images">
+                    <img src="images/bloodbankicon.jpeg" alt="">
+                </div>
+                <div class="tickbox">
+                    <img id="tick_box2" src="images/tick.png" alt="">
+                </div>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio asperiores libero sint amet dolores adipisci
+                    cum voluptas eius ipsam ab, delectus, magnam dignissimos ipsa ut quidem distinctio. Quae sunt reiciendis
+                    corporis, at veniam exercitationem iusto obcaecati modi, iste sapiente ea alias explicabo eius laboriosam
+                    tempora accusantium doloremque vitae harum quasi.</p> -->
+            </div>
+            <div class="box" id="box3" ">
+                <h1 id=" tytl_3">Admin Login</h1>
+                <div class="images">
+                    <img src="images/adminicon.jpeg" alt="">
+                </div>
+                <div class="tickbox">
+                    <img id="tick_box3" src="images/tick.png" alt="">
+                </div>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio asperiores libero sint amet dolores adipisci
+                    cum voluptas eius ipsam ab, delectus, magnam dignissimos ipsa ut quidem distinctio. Quae sunt reiciendis
+                    corporis, at veniam exercitationem iusto obcaecati modi, iste sapiente ea alias explicabo eius laboriosam
+                    tempora accusantium doloremque vitae harum quasi.</p> -->
+            </div>
+
+            
+
+        </div>
+
+        <div class="user_details" id="userdetails">
+            <div class="input-box">
+                <span class="details">User Name</span>
+                <input type="text" placeholder="Enter your User Name">
+
+            </div>
+            <div class="input-box">
+                <span class="details">Password</span>
+                <input type="password" placeholder="Enter your Password">
+            </div>
+
+
+            <div class="btn1">
+                <a href="#">
+                    <button id="button1" >SUBMIT</button>
+                </a>
+            </div>
+
+
+
+            <!-- <div class="btn3">
+                <a href="\dashboard">
+                    <button id="button3" >SUBMIT</button>
+                </a>
+            </div> -->
+
+
+            
+               
+          
+          
+        </div>
+
+
+    </div>
+
+
+    <script type="text/javascript">
+
+        box1.addEventListener('click', function () {
+            document.querySelector("#tick_box1").style = "opacity: 1;";
+            document.querySelector("#tick_box2").style = "opacity: 0;";
+            document.querySelector("#tick_box3").style = "opacity: 0;";
+            document.querySelector("#box1").style = " border:5px #039be5 solid;";
+            document.querySelector("#box2").style = " border:3px grey solid;";
+            document.querySelector("#box3").style = " border:3px grey solid;";
+            document.querySelector(".btn1").innerHTML = "<a href='/user_dashboard'><button id='button3'>SUBMIT</button></a>"
+            // document.querySelector(".btn1").style = " opacity:1;"
+            
+            // document.querySelector("#tytl_1").style = "background: linear-gradient(to right, #00F1FF, #3E7CEE); -webkit-text-fill-color: transparent; -webkit-background-clip: text;  "; 
+        })
+
+        box2.addEventListener('click', function () {
+            document.querySelector("#tick_box2").style = "opacity: 1;";
+            document.querySelector("#tick_box1").style = "opacity: 0;";
+            document.querySelector("#tick_box3").style = "opacity: 0;";
+            document.querySelector("#box2").style = " border:5px #039be5 solid;";
+            document.querySelector("#box1").style = " border:3px grey solid;";
+            document.querySelector("#box3").style = " border:3px grey solid;";
+            document.querySelector(".btn1").innerHTML = "<a href='/bloodbankdashboard'><button id='button3'>SUBMIT</button></a>"
+            // document.querySelector("#tytl_2").style = "background: linear-gradient(to right, #00F1FF, #3E7CEE); -webkit-text-fill-color: transparent; -webkit-background-clip: text;  "; 
+        })
+
+        box3.addEventListener('click', function () {
+            document.querySelector("#tick_box3").style = "opacity: 1;";
+            document.querySelector("#tick_box1").style = "opacity: 0;";
+            document.querySelector("#tick_box2").style = "opacity: 0;";
+            document.querySelector("#box3").style = " border:5px #039be5 solid;";
+            document.querySelector("#box1").style = " border:3px grey solid;";
+            document.querySelector("#box2").style = " border:3px grey solid;";
+            document.querySelector(".btn1").innerHTML = "<a href='/dashboard'><button id='button3'>SUBMIT</button></a>"
+            // document.querySelector("#tytl_3").style = "background: linear-gradient(to right, #00F1FF, #3E7CEE); -webkit-text-fill-color: transparent; -webkit-background-clip: text;  "; 
+        })
+
+        // userdetails.addEventListener('click' , function(){
+        //     document.querySelector(".tickkk").style = "display:none;";
+        //     document.querySelector("#box1").style = " border:2px grey solid;";
+        //     document.querySelector("#box2").style = " border:2px grey solid;";
+        //     document.querySelector("#box3").style = " border:2px grey solid;";
+        // })
+
+        // function slct_1() {
+        //     var slct_1 = document.getElementById('box1');
+        //     slct_1.style.border = "2px solid blue";
+        //     var imgg_1 = document.getElementById('tickimg');
+        //     imgg_1.style.display = "flex";
+        // }
+
+        // function slct_2() {
+        //     var slct_2 = document.getElementById('box2');
+        //     slct_2.style.border = "2px solid blue";
+        //     var imgg_2 = document.getElementById('tickimg');
+        //     imgg_2.style.display = "flex";
+        //     imgg_2.style = "top:50vh;"
+        // }
+    </script>
+</body>
+
+</html>

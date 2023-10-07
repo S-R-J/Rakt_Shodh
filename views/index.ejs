@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<div class="container">
+    
+
+
+    <div class="front" id="front">
+      <div class="nav">
+        <nav id="navv">
+          <ul class="mynavbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#ourservices">Services</a></li>
+            <li><a href="#aboutshift">About</a></li>
+            <li><a href="/admin_new2">Login</a></li>
+            <!-- <div class="ee">
+              <a href="#">
+                <li>Home</li>
+              </a>
+    
+              <a href="#aboutshift">
+                <li>About</li>
+              </a>
+            </div>
+            
+  
+            <div class="adm">
+              <a href="/admin_new2">
+                <li>Login</li>
+              </a>
+            </div> -->
+            
+          </ul>
+        </nav>
+      </div>
+
+      <!-- <h1>"Temporary REMOVED"</h1> -->
+      <div class="imagge" id="imagge">
+      <img id="immmg" src="images\raktshodh.png" alt="" width="700px" onmouseover="onImg.call(this)" onmouseout="outImg.call(this)">
+
+    </div>
+
+    <!-- <div class="imagge2">
+      <img id="imagge2" src="images\raktshodh_marathi.png" alt="" width="600px">
+    </div> -->
+
+
+    
+  </div>
+
+  <!-- <div class="block"></div> -->
+  <!-- <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div> -->
+
+  <!-- <div class="services" id="ser2"> -->
+  <!-- <h1>Welcome to </h1> -->
+  <!-- <h1>Rakt-Shodh </h1> -->
+  <!-- </div> -->
+
+  <div class="services2" id="ourservices">
+    <h1 id="ourservicestext">Our Services</h1>
+  </div>
+
+  <div class="container2" id="container2">
+    <div class="card">
+      <a href="/findbloodbank">
+        <div class="box">
+          <div class="content">
+            <img src="images\img-1.png" alt="" width="200px" height="200px" />
+            <!-- <button>Find Blood</button> -->
+            <h4>Check Blood Availability</h4>
+            <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, at. Voluptate omnis excepturi
+                            illum
+                            delectus iusto cumque tempora id error, quo dolor accusantium dolorum reprehenderit nihil!
+                            Doloribus
+                            tenetur consequuntur magnam.</p> -->
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="/request">
+        <div class="box">
+          <div class="content">
+            <img src="images\img-3.png" alt="" id="img3" width="200px" height="150px" />
+            <h4>Request Blood</h4>
+            <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, at. Voluptate omnis excepturi
+                            illum
+                            delectus iusto cumque tempora id error, quo dolor accusantium dolorum reprehenderit nihil!
+                            Doloribus
+                            tenetur consequuntur magnam.</p> -->
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="/bloodbankdir">
+        <div class="box">
+          <div class="content">
+            <img src="images\bloodbank.png" alt="" id="img3" width="150px" height="120px" />
+            <!-- <h4 id="dd">Blood Bank </h4> -->
+            <h4>Blood Bank</h4>
+            <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, at. Voluptate omnis excepturi
+                            illum
+                            delectus iusto cumque tempora id error, quo dolor accusantium dolorum reprehenderit nihil!
+                            Doloribus
+                            tenetur consequuntur magnam.</p> -->
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="/camp">
+        <div class="box">
+          <div class="content">
+            <img src="/images/organizer.png" alt="" width="200px" height="200px" />
+            <h4>Organise Blood Camp</h4>
+            <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, at. Voluptate omnis excepturi
+                            illum
+                            delectus iusto cumque tempora id error, quo dolor accusantium dolorum reprehenderit nihil!
+                            Doloribus
+                            tenetur consequuntur magnam.</p> -->
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="/acceptrequest">
+        <div class="box">
+          <div class="content">
+            <img src="/images/accept.png" alt="" width="200px" height="200px" />
+            <h4>Accept Request</h4>
+            <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, at. Voluptate omnis excepturi
+                            illum
+                            delectus iusto cumque tempora id error, quo dolor accusantium dolorum reprehenderit nihil!
+                            Doloribus
+                            tenetur consequuntur magnam.</p> -->
+          </div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="card">
+      <a href="/trackrequest">
+        <div class="box">
+          <div class="content">
+            <img src="images/tracking.png" alt="" width="200px" height="200px" />
+            <h4>Track Request</h4>
+            <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, at. Voluptate omnis excepturi
+                            illum
+                            delectus iusto cumque tempora id error, quo dolor accusantium dolorum reprehenderit nihil!
+                            Doloribus
+                            tenetur consequuntur magnam.</p> -->
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+
+  
+  <div class="counting">
+    <div class="dabbe">
+      <div class="countone">
+        <img src="images/threepeople.png" alt="">
+        <h1>Helped Patients</h1>
+      <div class="dabba">540</div>
+      </div>
+
+      <div class="counttwo">
+        <img id="img2" src="images/blooddrop.png" alt="">
+        <h1>Blood Arranged (Units)</h1>
+      <div class="dabba">2230</div>
+      </div>
+
+      <div class="countthree"> 
+        <img id="img2" src="images/blooddrop.png" alt="">
+        <h1>Camps Arranged</h1>
+      <div class="dabba">43</div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <div class="tbhead">
+    <h3>Compitable Blood Type Donors</h3>
+  </div>
+
+  <div class="table">
+    <table>
+      <tr id="header">
+        <th>Blood Type</th>
+        <th>Donate Blood To</th>
+        <th>Receive Blood From</th>
+        <!-- <th>Age</th>
+                    <th>Mobile</th> -->
+      </tr>
+
+      <tr>
+        <td>A+</td>
+        <td>A+ AB+</td>
+        <td>A+ A- O+ O-</td>
+      </tr>
+
+      <tr>
+        <td>O+</td>
+        <td>O+ A+ B+ AB+</td>
+        <td>O+ O-</td>
+        <!-- <td>21</td> -->
+        <!-- <td>99999</td> -->
+      </tr>
+
+      <tr>
+        <td>B+</td>
+        <td>B+AB+</td>
+        <td>B+ B- O+ O-</td>
+        <!-- <td>21</td> -->
+        <!-- <td>99999</td> -->
+      </tr>
+
+      <tr>
+        <td>AB+</td>
+        <td>AB+</td>
+        <td>Everyone</td>
+        <!-- <td>21</td> -->
+        <!-- <td>99999</td> -->
+      </tr>
+
+      <tr>
+        <td>A-</td>
+        <td>A+ A- AB+ AB-</td>
+        <td>A- O-</td>
+        <!-- <td>21</td> -->
+        <!-- <td>99999</td> -->
+      </tr>
+
+      <tr>
+        <td>O-</td>
+        <td>Everyone</td>
+        <td>O-</td>
+        <!-- <td>21</td> -->
+        <!-- <td>99999</td> -->
+      </tr>
+      <tr>
+        <td>B-</td>
+        <td>B+ B- AB+ AB-</td>
+        <td>B- O-</td>
+        <!-- <td>21</td> -->
+        <!-- <td>99999</td> -->
+      </tr>
+      <tr>
+        <td>AB-</td>
+        <td>AB+ AB-</td>
+        <td>AB- A- B- O-</td>
+        <!-- <td>21</td> -->
+        <!-- <td>99999</td> -->
+      </tr>
+    </table>
+  </div>
+
+
+
+
+
+
+  <!-- ######################################  IMAGE SLIDER CODE ############################################## -->
+  
+  <div class="tbhead">
+    <h3>Organized Blood Camp</h3>
+  </div>
+
+  <div class="slider-container">
+    <div class="img-slider">
+      <div class="slide active">
+        <img id="slider-pic-1" src="/images/slider_pic-1.jpeg" alt="">
+        <div class="info">
+          <!-- <h2>Slide 01</h2> -->
+          <!-- <p></p> -->
+        </div>
+      </div>
+      <div class="slide">
+        <img id="slider-pic-2" src="/images/slider_pic-2.jpeg" alt="">
+        <div class="info">
+          <!-- <h2>Slide 02</h2> -->
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+        </div>
+      </div>
+      <div class="slide">
+        <img id="slider-pic-3" src="/images/slider_pic-3.jpeg" alt="">
+        <div class="info">
+          <!-- <h2>NSS VIIT</h2> -->
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+        </div>
+      </div>
+      <div class="slide">
+        <img id="slider-pic-4" src="/images/slider_pic-4.jpeg" alt="">
+        <div class="info">
+          <!-- <h2>Slide 04</h2> -->
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+        </div>
+      </div>
+      <div class="slide">
+        <img id="slider-pic-5" src="/images/slider_pic-5.jpeg" alt="">
+        <div class="info">
+          <!-- <h2>Slide 05</h2> -->
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
+  </div>
+
+ <!-- ######################################  IMAGE SLIDER Code END ############################################## -->
+
+
+
+
+
+
+
+  <div class="container3" id="container3">
+    <h2 id="aboutshift" data-aos="zoom-out-up">Need Of Blood Donation</h2>
+    <p>
+    <div class="twoblocks" id="twoblocks">
+      <div class="block1">
+        <ul data-aos="zoom-out-up">
+          <li>Every year our nation requires about 5 Crore units of blood, out of which only a meager 2.5 Crore units of
+            blood are available.
+          <li>The gift of blood is the gift of life. There is no substitute for human blood.</li>
+          <li> Every two seconds someone needs blood.</li>
+      </div>
+
+      <div class="block2" data-aos="zoom-out"><img src="images/index.jpg" id="indeximg" alt="" ></div>
+
+    </div>
+
+    
+    </ul>
+    </p>
+
+  </div>
+
+
+  <div class="container4" id="container4">
+    <h2 data-aos="zoom-out-up">Facts Of Blood Donation</h2>
+    <p>
+    <ul data-aos="zoom-out-up">
+      <li>
+        You don't always have to be a doctor to SAVE someone's LIFE!,So roll up your sleeves and contribute
+        proactively in this noble cause.
+      </li>
+      <li>
+        Donating just a pint (almost 470 ml) of blood will not make much of a difference in your life but that one
+        pint can save up to three lives!
+      </li>
+
+      <li>
+        A person has 5 - 6 litres of blood in his/her body
+        The donated blood will be replaced in 56 days (less than 2 months)
+        Donor will not become "weak" after blood donation
+      </li>
+
+      <li>It takes only 15 to 20 minutes to donate blood</li>
+    </ul>
+
+
+
+
+
+    </p>
+  </div>
+  </div>
+  <div id="about">
+    <!-- <h3 id="abouth">Devloper Team </h3>
+    <br>
+    <li>Tech Dudes</li>
+    <br><br>
+    <li>Yash Phalle , Suraj Meshram , Ambarish Kshirsagar</li> -->
+Made By TechDudes with <span id="icon"> ❤ <span>
+
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 10,
+      duration: 400,
+    });
+
+
+    function onImg() {
+      this.setAttribute("src", "images/raktshodh_marathi.png");
+    }
+
+    function outImg() {
+      this.setAttribute("src", "images/raktshodh.png");
+    }
+
+
+  </script>
+
+
+<!-- <script>
+  let more = document.querySelector(".more");
+  let audioArr = document.getElementsByTagName('audio');
+
+  more.addEventListener('mouseenter', () => {
+    audioArr[0].play()
+  })
+</script> -->
+
+<script>
+  $(document).ready(function(){
+    $(".dabba").counterUp({
+      delay:10,
+      time:2500
+    })
+  })
+</script>
+
+
+
+
+<!-- ######################################  IMAGE SLIDER SCRIPT ############################################## -->
+
+<script type="text/javascript">
+  var slides = document.querySelectorAll('.slide');
+  var btns = document.querySelectorAll('.btn');
+  let currentSlide = 1;
+
+  // Javascript for image slider manual navigation
+  var manualNav = function(manual){
+    slides.forEach((slide) => {
+      slide.classList.remove('active');
+
+      btns.forEach((btn) => {
+        btn.classList.remove('active');
+      });
+    });
+
+    slides[manual].classList.add('active');
+    btns[manual].classList.add('active');
+  }
+
+  btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+      manualNav(i);
+      currentSlide = i;
+    });
+  });
+
+  // Javascript for image slider autoplay navigation
+  var repeat = function(activeClass){
+    let active = document.getElementsByClassName('active');
+    let i = 1;
+
+    var repeater = () => {
+      setTimeout(function(){
+        [...active].forEach((activeSlide) => {
+          activeSlide.classList.remove('active');
+        });
+
+      slides[i].classList.add('active');
+      btns[i].classList.add('active');
+      i++;
+
+      if(slides.length == i){
+        i = 0;
+      }
+      if(i >= slides.length){
+        return;
+      }
+      repeater();
+    }, 3000);
+    }
+    repeater();
+  }
+  repeat();
+  </script>
+
+  <!-- ######################################  IMAGE SLIDER Script END  ############################################## -->
+
+
+
+</body>
+
+</html>
